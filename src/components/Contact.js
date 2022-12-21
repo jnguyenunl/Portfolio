@@ -22,7 +22,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:3000/contact", {
+    let response = await fetch("https://jamesnguyenportfolio.netlify.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -41,6 +41,7 @@ const Contact = () => {
       });
     }
   };
+//   "http://localhost:3000/contact"
 
   return (
     <section className="contact" id="connect">
