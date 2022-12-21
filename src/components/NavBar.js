@@ -59,7 +59,7 @@ const NavBar = () => {
                 }
                 onClick={() => setActiveLink("projects")}
               >
-                Projects
+                Project
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
