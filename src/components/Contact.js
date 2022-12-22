@@ -52,8 +52,8 @@ const Contact = () => {
             <img src={contactImg} alt="Contact" />
           </Col>
           <Col>
-            <form name="contact" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
+            <form name="form" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="form" />
               <Row>
                 <Col sm={6} className="px-1">
                   <input
