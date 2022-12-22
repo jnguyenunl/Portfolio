@@ -7,12 +7,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  <form name="form" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message" />
-  </form>;
-
   return (
     <div className="App">
       <NavBar />
