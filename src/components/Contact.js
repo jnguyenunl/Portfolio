@@ -49,11 +49,11 @@ const Contact = () => {
   //   <textarea name="message" />
   // </form>;
 
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message" />
-  </form>;
+  // <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  //   <input type="text" name="name" />
+  //   <input type="email" name="email" />
+  //   <textarea name="message" />
+  // </form>;
 
   return (
     <form name="contact" method="POST" data-netlify="true">
