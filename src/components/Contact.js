@@ -4,46 +4,46 @@ import contactImg from "../assets/img/contact-img.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 const Contact = () => {
-  // const formInitialDetails = {
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   phone: "",
-  //   message: "",
-  // };
-  // const [formDetails, setFormDetails] = useState(formInitialDetails);
-  // const [buttonText, setButtonText] = useState("Send");
-  // const [status, setStatus] = useState({});
+  const formInitialDetails = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  };
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState("Send");
+  const [status, setStatus] = useState({});
 
-  // const onFormUpdate = (catergory, value) => {
-  //   setFormDetails({ ...formDetails, [catergory]: value });
-  // };
+  const onFormUpdate = (catergory, value) => {
+    setFormDetails({ ...formDetails, [catergory]: value });
+  };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setButtonText("Sending...");
-  //   let response = await fetch(
-  //     "https://jamesnguyenportfolio.netlify.app/contact",
-  //     {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json;charset=utf-8",
-  //       },
-  //       body: JSON.stringify(formDetails),
-  //     }
-  //   );
-  //   setButtonText("Send");
-  //   let result = await response.json();
-  //   setFormDetails(formInitialDetails);
-  //   if (result.code === 200) {
-  //     setStatus({ succes: true, message: "Message sent successfully!" });
-  //   } else {
-  //     setStatus({
-  //       succes: false,
-  //       message: "Something went wrong, please try again later.",
-  //     });
-  //   }
-  // };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Sending...");
+    let response = await fetch(
+      "https://jamesnguyenportfolio.netlify.app/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      }
+    );
+    setButtonText("Send");
+    let result = await response.json();
+    setFormDetails(formInitialDetails);
+    if (result.code === 200) {
+      setStatus({ succes: true, message: "Message sent successfully!" });
+    } else {
+      setStatus({
+        succes: false,
+        message: "Something went wrong, please try again later.",
+      });
+    }
+  };
   //   "http://localhost:3000/contact"
 
   return (
