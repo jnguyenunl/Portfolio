@@ -53,6 +53,7 @@ const Contact = () => {
           </Col>
           <Col>
             <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <Row>
                 <Col sm={6} className="px-1">
                   <input
