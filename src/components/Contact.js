@@ -46,7 +46,7 @@ const Contact = () => {
   <form name="form" netlify netlify-honeypot="bot-field" hidden>
     <input type="text" name="name" />
     <input type="email" name="email" />
-    <textarea name="message"></textarea>
+    <textarea name="message" />
   </form>;
 
   return (
