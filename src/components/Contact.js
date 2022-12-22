@@ -22,13 +22,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://jamesnguyenportfolio.netlify.app/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    let response = await fetch(
+      "https://jamesnguyenportfolio.netlify.app/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      }
+    );
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
@@ -41,7 +44,7 @@ const Contact = () => {
       });
     }
   };
-//   "http://localhost:3000/contact"
+  //   "http://localhost:3000/contact"
 
   return (
     <section className="contact" id="connect">
@@ -59,7 +62,7 @@ const Contact = () => {
             </Col>
           ) : (
             <Col>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} action="POST" data-netlify="true">
                 <Row>
                   <Col sm={6} className="px-1">
                     <input
