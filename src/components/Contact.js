@@ -55,7 +55,7 @@ const Contact = () => {
             <img src={contactImg} alt="Contact" />
           </Col>
           <Col>
-            <form action="POST" data-netlify="true">
+            <form name="contact" action="POST" data-netlify="true">
               <Row>
                 <Col sm={6} className="px-1">
                   <input
@@ -67,7 +67,7 @@ const Contact = () => {
                     name="name"
                   />
                 </Col>
-                <Col sm={6} className="px-1">
+                {/* <Col sm={6} className="px-1">
                   <input
                     type="text"
                     // value={formDetails.lastName}
@@ -76,7 +76,7 @@ const Contact = () => {
                     required
                     name="name"
                   />
-                </Col>
+                </Col> */}
                 <Col sm={6} className="px-1">
                   <input
                     type="email"
