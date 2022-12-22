@@ -43,6 +43,12 @@ const Contact = () => {
   // };
   //   "http://localhost:3000/contact"
 
+  <form name="form" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>;
+
   return (
     <section className="contact" id="connect">
       <Container className="contact" id="connect">
@@ -52,12 +58,7 @@ const Contact = () => {
             <img src={contactImg} alt="Contact" />
           </Col>
           <Col>
-            <form
-              name="form"
-              method="POST"
-              data-netlify="true"
-              onSubmit="submit"
-            >
+            <form name="form" method="POST">
               <input type="hidden" name="form-name" value="form" />
               <Row>
                 <Col sm={6} className="px-1">
