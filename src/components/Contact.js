@@ -7,12 +7,12 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container className="contact" id="connect">
         <Row className="align-items-center">
+          <h2>Get In Touch</h2>
           <Col md={6}>
             <img src={contactImg} alt="Contact" />
           </Col>
           <Col>
-            <h2>Get In Touch</h2>
-            <form name="form" method="post">
+            <form name="form" method="post" data-netlify-recaptcha="true">
               <input type="hidden" name="form-name" value="form" />
               <Row>
                 <Col sm={6} className="px-1">
@@ -49,9 +49,11 @@ const Contact = () => {
                     required
                     name="message"
                   />
-                  <button>Send</button>
+                  {/* <button>Send</button> */}
                 </Col>
               </Row>
+              <div data-netlify-recaptcha="true"></div>
+              <button>Send</button>
             </form>
           </Col>
         </Row>
