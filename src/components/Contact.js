@@ -12,13 +12,11 @@ const Contact = () => {
             <img src={contactImg} alt="Contact" />
           </Col>
           <Col>
-            <form
-              name="form"
-              method="post"
-              data-netlify-recaptcha="true"
-              data-netlify="true"
-            >
+            <form name="form" method="post">
               <input type="hidden" name="form-name" value="form" />
+              <div hidden>
+                <input name="bot-field" />
+              </div>
               <Row>
                 <Col sm={6} className="px-1">
                   <input

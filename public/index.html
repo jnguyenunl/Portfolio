@@ -39,13 +39,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <form name="form" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+    <form name="form" netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" hidden>
+      <input name="bot-field" />
       <input type="text" name="first-name" />
       <input type="text" name="last-name" />
       <input type="email" name="email" />
       <input type="tel" name="number" />
       <textarea name="message" />
-      <div data-netlify-recaptcha="true"></div>
     </form>;
   </body>
 </html>
