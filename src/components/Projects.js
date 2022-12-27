@@ -1,12 +1,12 @@
 import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/DMSi.jpg";
+import projImg1 from "../assets/img/kpi.jpg";
 import projImg2 from "../assets/img/banking.png";
-import projImg3 from "../assets/img/store.jpg";
-import projImg4 from "../assets/img/wber.jpg";
-import projImg5 from "../assets/img/todo.png";
-import projImg6 from "../assets/img/website.jpg";
+import projImg3 from "../assets/img/ecommerce.jpg";
+import projImg4 from "../assets/img/car.jpg";
+import projImg5 from "../assets/img/check.jpg";
+import projImg6 from "../assets/img/portfolio.webp";
 
 const projects1 = [
   {
