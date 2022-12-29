@@ -18,13 +18,13 @@ const projects1 = [
   {
     title: "Banking System",
     description:
-      "Financial Management Tool. Ability to modify and/or delete financial assets, portfolios, and clients. Technology Stack: Java, MySQL, Java Database Connectivity (JDBC) API",
+      "Financial management tool. Ability to modify and/or delete financial assets, portfolios, and clients. Technology Stack: Java, MySQL, Java Database Connectivity (JDBC) API",
     imgUrl: projImg2,
   },
   {
     title: "E-Commerce Online Store",
     description:
-      "E-Commerce Website with standard funtionalities. Utilized Agile and Scrum Methodologies for Development Process. Technology Stack: ASP.Net MVC, C#, CSS, HTML",
+      "E-Commerce Website with standard online store shopping and management functionalities. Utilized Agile and Scrum Methodologies for development process. Technology Stack: ASP.Net MVC, C#, CSS, HTML",
     imgUrl: projImg3,
   },
 ];
@@ -33,18 +33,19 @@ const projects2 = [
   {
     title: "Transportion Mobile App",
     description:
-      "IOS and Android Application for Requesting Rides on Demand. Technology Stack: React Native, Javascript, Tailwind, Google Places API, Goolge Directions API, Google Distance Matrix API",
+      "iOS and Android Application for requesting rides on demand. Technology Stack: React Native, Javascript, Tailwind, Google Places API, Goolge Directions API, Google Distance Matrix API",
     imgUrl: projImg4,
   },
   {
     title: "Canvas TO-DO List Tool",
     description:
-      "Google Chrome Extention for Generation Customizable To-Do List from Data Pulled from Canvas LMS API. User Testing: Paper and computer prototyping, cognitive walkthrough, heuristic evaluation, and usability testing. Technology Stack: JavaScript, React, CSS, and HTML",
+      "Google Chrome extention for generating a customizable to-do list from data pulled from Canvas LMS API. User Testing: Paper and Computer Prototyping, Cognitive Walkthrough, Heuristic Evaluation, and Usability Testing. Technology Stack: JavaScript, React, CSS, and HTML",
     imgUrl: projImg5,
   },
   {
     title: "Portfolio Website",
-    description: "Technology Stack: React, JavaScript, CSS, HTML, Bootstrap",
+    description:
+      "Personalized React website to showcase projects and skills. Technology Stack: React, JavaScript, CSS, HTML, Bootstrap",
     imgUrl: projImg6,
   },
 ];

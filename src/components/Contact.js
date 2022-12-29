@@ -52,7 +52,6 @@ const Contact = () => {
                     required
                     name="message"
                   />
-                  {/* <button>Send</button> */}
                 </Col>
               </Row>
               <button>Send</button>
@@ -60,7 +59,11 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="null" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="Background"
+      />
     </section>
   );
 };

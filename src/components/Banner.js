@@ -23,17 +23,15 @@ const Banner = () => {
   //time between letters
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
-  useEffect(
-    () => {
-      let ticker = setInterval(() => {
-        tick();
-      }, delta);
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
 
-      return () => {
-        clearInterval(ticker);
-      };
-    } /*[text])*/
-  );
+    return () => {
+      clearInterval(ticker);
+    };
+  });
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -63,7 +61,7 @@ const Banner = () => {
         <Container className="align-items-center">
           <Row>
             <Col xs={12} md={6} xl={7}>
-              <span>Welcome to my Portfolio</span>
+              <span className="tagline">Welcome to my Portfolio</span>
               <h1>
                 {"Hi! I'm James "}
                 <span className="wrap">{text}</span>
